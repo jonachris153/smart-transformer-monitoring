@@ -1,1 +1,2 @@
-System architecture and documentation.
+System architecture diagrams and documentation.
+
