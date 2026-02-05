@@ -38,6 +38,8 @@ smart-transformer-monitoring/
 ## Project Status
 ✔ Core embedded firmware implemented  
 🔄 Voltage sensing, OLED display, and cloud connectivity under development
+This prototype focuses on embedded monitoring logic and protection behavior rather than full substation-scale deployment.
+
 
 
 
