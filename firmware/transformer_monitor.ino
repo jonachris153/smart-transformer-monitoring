@@ -38,11 +38,11 @@ void setup() {
   Serial.println("==============================================");
 
   if (tempSensor.getDeviceCount() == 0) {
-    Serial.println("❌ Temperature sensor not detected!");
+    Serial.println("Temperature sensor not detected!");
     while (1);
   }
 
-  Serial.println("✅ System Initialized Successfully");
+  Serial.println("System Initialized Successfully");
 }
 
 // ------------------------------------------------
@@ -68,11 +68,11 @@ void loop() {
 
   // -------- CONDITION MONITORING -------
   if (temperature > TEMP_LIMIT || abs(current) > CURRENT_LIMIT) {
-    Serial.println("⚠️ ABNORMAL CONDITION DETECTED!");
-    Serial.println("🔌 Activating Protection / Load Balancing");
+    Serial.println("ABNORMAL CONDITION DETECTED!");
+    Serial.println("Activating Protection / Load Balancing");
     digitalWrite(RELAY_PIN, HIGH);  // Cut / shift load
   } else {
-    Serial.println("✅ Transformer Operating Normally");
+    Serial.println("Transformer Operating Normally");
     digitalWrite(RELAY_PIN, LOW);   // Normal operation
   }
 
